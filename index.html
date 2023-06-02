@@ -33,7 +33,7 @@
               <a class="main-menu-link link" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="main-menu-item">
-              <a class="main-menu-link link" href="">Contacts</a>
+              <a class="main-menu-link link" href="#">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -49,18 +49,112 @@
             </li>
           </ul>
         </address>
+        <button class="mobile-menu-opn-btn button js-open-menu" type="button" aria-expanded="false">
+          <svg class="mobile-menu-opn-icon" aria-label="hamburger-menu icon" width="32" height="32">
+            <use href="./images/icons.svg#icon-menu-opn-hamburger"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu js-menu-container">
+        <button type="button" class="modal-close-btn js-close-menu">
+          <svg class="modal-close-icon button" aria-label="X mark" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <ul class="hamburger-menu list">
+          <li class="hamburger-menu-item">
+            <a href="./index.html" class="hamburger-menu-link link">Studio</a>
+          </li>
+          <li class="hamburger-menu-item">
+            <a href="./portfolio.html" class="hamburger-menu-link link">Portfolio</a>
+          </li>
+          <li class="hamburger-menu-item">
+            <a href="#" class="hamburger-menu-link link">Contacts</a>
+          </li>
+        </ul>
+        <ul class="hamburger-contact-list list">
+          <li class="hamburger-contact-list-item">
+            <a class="hamburger-mobile-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+          </li>
+          <li class="hamburger-contact-list-item">
+            <a class="hamburger-email-link link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="hamburger-social-list list">
+          <li class="hamburger-social-list-item">
+            <a href="#" class="hamburger-social-list-link social-list-link link">
+              <svg
+                class="hamburger-social-list-icon social-list-icon"
+                aria-label="instagram icon"
+                width="24"
+                height="24"
+              >
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="hamburger-social-list-item">
+            <a
+              href="#"
+              class="hamburger-social-list-link social-list-link social-list-link-light link"
+            >
+              <svg
+                class="hamburger-social-list-icon social-list-icon"
+                aria-label="twitter icon"
+                width="24"
+                height="24"
+              >
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="hamburger-social-list-item">
+            <a
+              href="#"
+              class="hamburger-social-list-link social-list-link social-list-link-light link"
+            >
+              <svg
+                class="hamburger-social-list-icon social-list-icon"
+                aria-label="facebook icon"
+                width="24"
+                height="24"
+              >
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="hamburger-social-list-item">
+            <a
+              href="#"
+              class="hamburger-social-list-link social-list-link social-list-link-light link"
+            >
+              <svg
+                class="hamburger-social-list-icon social-list-icon"
+                aria-label="linkedin icon"
+                width="24"
+                height="24"
+              >
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
     <main>
       <!-- HERO -->
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container hero-container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
           <button class="modal-opn-btn" type="button" data-modal-open>Order Service</button>
         </div>
-      </section>
+      </section> -->
+
       <!-- ABOUT -->
-      <section class="about">
+      <!-- <section class="about">
         <div class="container">
           <h2 class="subtitle" hidden>About Us</h2>
           <ul class="features-list list">
@@ -114,9 +208,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
+
       <!-- COMPANY PRODUCTS-->
-      <section class="company-products">
+      <!-- <section class="company-products">
         <div class="container">
           <h2 class="subtitle">What are we doing</h2>
           <ul class="gallery list">
@@ -149,9 +244,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
+
       <!-- TEAM MEMBERS -->
-      <section class="employees">
+      <!-- <section class="employees">
         <div class="container">
           <h2 class="subtitle">Our Team</h2>
           <ul class="employees-list list">
@@ -409,9 +505,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
+
       <!-- CUSTOMERS -->
-      <section class="customers">
+      <!-- <section class="customers">
         <div class="container">
           <h2 class="subtitle">Customers</h2>
           <ul class="customers-list list">
@@ -489,10 +586,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
+
     <!-- FOOTER -->
-    <footer class="page-footer">
+    <!-- <footer class="page-footer">
       <div class="container footer-container">
         <div class="footer-part-logo">
           <a class="logo footer-logo link" href="./index.html"
@@ -564,9 +662,10 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
+
     <!-- MODAL -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-icon button" aria-label="X mark" width="8" height="8">
@@ -662,7 +761,10 @@
           <button type="submit" class="modal-send-btn modal-opn-btn button">Send</button>
         </form>
       </div>
-    </div>
-    <script src="./js/modal.js"></script>
+    </div> -->
+
+    <!-- <script src="./js/modal.js"></script> -->
+    <
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

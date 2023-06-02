@@ -51,17 +51,139 @@ img {
   display: block;
 }
 
-.container {
-  width: 1158px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 .visually-hidden {
   appearance: none;
   position: absolute;
+}
+
+.container {
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media screen and (min-width: 428px) {
+  .container {
+    max-width: 396px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 736px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+.main-menu {
+  display: none;
+}
+
+.contact-info {
+  display: none;
+}
+
+.page-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.page-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-menu-opn-btn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  line-height: 0;
+}
+
+.mobile-menu-opn-icon {
+  stroke: var(--primary-color-dark-theme);
+}
+
+.mobile-menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--secondary-color-light-theme);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.hamburger-menu {
+  margin-bottom: 284px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+  padding-left: 40px;
+  gap: 40px;
+}
+
+.hamburger-menu-link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--primary-color-dark-theme);
+  transition: color var(--transition-param);
+}
+.hamburger-menu-link:hover,
+.hamburger-menu-link:focus {
+  color: var(--accent-color);
+}
+
+.hamburger-contact-list {
+  margin-bottom: 48px;
+  padding-left: 40px;
+}
+
+.hamburger-mobile-link {
+  margin-bottom: 40px;
+  display: block;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--primary-brand-color);
+}
+
+.hamburger-email-link {
+  display: block;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color-dark-theme);
+}
+
+.hamburger-social-list {
+  display: flex;
+  justify-content: center;
+  gap: 56px;
 }
 
 /*====================================  COMPONENTS ==================================== */
@@ -85,6 +207,34 @@ img {
   background-color: var(--accent-color);
 }
 
+.modal-close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  transition: background-color var(--transition-param), border var(--transition-param);
+}
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  background-color: var(--accent-color);
+  border: none;
+}
+.modal-close-icon {
+  transition: fill var(--transition-param);
+}
+.modal-close-btn:hover .modal-close-icon,
+.modal-close-btn:focus .modal-close-icon {
+  fill: var(--secondary-color-light-theme);
+}
+
 .subtitle {
   margin-bottom: 72px;
   font-weight: 700;
@@ -105,11 +255,9 @@ img {
   text-transform: uppercase;
   color: var(--primary-brand-color);
 }
-
 .second-part-logo-dark-theme {
   color: var(--primary-color-light-theme);
 }
-
 .second-part-logo-light-theme {
   color: var(--primary-color-dark-theme);
 }
@@ -119,7 +267,6 @@ img {
   justify-content: center;
   gap: 24px;
 }
-
 .social-list-link {
   display: flex;
   justify-content: center;
@@ -132,7 +279,6 @@ img {
 .social-list-icon {
   fill: var(--primary-color-light-theme);
 }
-
 .social-list-link-light,
 .social-list-link-dark {
   transition: background-color var(--transition-param);
@@ -149,7 +295,7 @@ img {
 /*====================================  /COMPONENTS ==================================== */
 
 /*==================================== HEADER ====================================*/
-.page-header {
+/* .page-header {
   display: flex;
   align-items: center;
   border-bottom: 1px solid #e7e9fc;
@@ -227,7 +373,7 @@ img {
 .contact-list-link:hover,
 .contact-list-link:focus {
   color: var(--accent-color);
-}
+} */
 /*==================================== /HEADER ====================================*/
 
 /*==================================== STUDIO ====================================*/
@@ -814,35 +960,6 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-
-.modal-close-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 24px;
-  right: 24px;
-  padding: 0;
-  width: 24px;
-  height: 24px;
-  background-color: #e7e9fc;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  transition: background-color var(--transition-param), border var(--transition-param);
-}
-.modal-close-btn:hover,
-.modal-close-btn:focus {
-  background-color: var(--accent-color);
-  border: none;
-}
-
-.modal-close-icon {
-  transition: fill var(--transition-param);
-}
-.modal-close-btn:hover .modal-close-icon,
-.modal-close-btn:focus .modal-close-icon {
-  fill: var(--secondary-color-light-theme);
 }
 
 .is-hidden {
