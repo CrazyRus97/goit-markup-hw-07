@@ -1441,6 +1441,10 @@ img {
     text-align: left;
   }
 
+  .footer-social-list {
+    flex-wrap: nowrap;
+  }
+
   .social-media-title {
     text-align: left;
   }
@@ -1477,6 +1481,10 @@ img {
 
   .footer-part-social-media {
     margin-right: 80px;
+  }
+
+  .footer-part-subscribe {
+    width: auto;
   }
 }
 
