@@ -185,7 +185,6 @@ img {
 .social-list-link-dark:focus {
   background-color: var(--success-color);
 }
-
 /*====================================  /COMPONENTS ==================================== */
 
 /*==================================== HEADER ====================================*/
@@ -1449,6 +1448,10 @@ img {
     text-align: left;
   }
 
+  .footer-part-subscribe {
+    width: auto;
+  }
+
   .subscribe-title {
     text-align: left;
   }
@@ -1481,10 +1484,6 @@ img {
 
   .footer-part-social-media {
     margin-right: 80px;
-  }
-
-  .footer-part-subscribe {
-    width: auto;
   }
 }
 
@@ -1971,5 +1970,4 @@ img {
   opacity: 0;
   pointer-events: none;
 } */
-
 /*==================================== /MODAL ====================================*/
