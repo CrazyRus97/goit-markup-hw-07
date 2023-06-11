@@ -62,27 +62,30 @@
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
-        <ul class="hamburger-menu list">
-          <li class="hamburger-menu-item">
-            <a href="./index.html" class="hamburger-menu-link link">Studio</a>
-          </li>
-          <li class="hamburger-menu-item">
-            <a href="./portfolio.html" class="hamburger-menu-link link">Portfolio</a>
-          </li>
-          <li class="hamburger-menu-item">
-            <a href="#" class="hamburger-menu-link link">Contacts</a>
-          </li>
-        </ul>
-        <ul class="hamburger-contact-list list">
-          <li class="hamburger-contact-list-item">
-            <a class="hamburger-mobile-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
-          </li>
-          <li class="hamburger-contact-list-item">
-            <a class="hamburger-email-link link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-        </ul>
+        <div class="hamburger-main">
+          <ul class="hamburger-menu list">
+            <li class="hamburger-menu-item">
+              <a href="./index.html" class="hamburger-menu-link current link">Studio</a>
+            </li>
+            <li class="hamburger-menu-item">
+              <a href="./portfolio.html" class="hamburger-menu-link link">Portfolio</a>
+            </li>
+            <li class="hamburger-menu-item">
+              <a href="#" class="hamburger-menu-link link">Contacts</a>
+            </li>
+          </ul>
+          <ul class="hamburger-contact-list list">
+            <li class="hamburger-contact-list-item">
+              <a class="hamburger-mobile-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            </li>
+            <li class="hamburger-contact-list-item">
+              <a class="hamburger-email-link link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </div>
+
         <ul class="hamburger-social-list list">
           <li class="hamburger-social-list-item">
             <a href="#" class="hamburger-social-list-link social-list-link link">
@@ -148,9 +151,11 @@
     <main>
       <!-- HERO -->
       <section class="hero">
-        <div class="container hero-container">
+        <div class="container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
-          <button class="modal-opn-btn" type="button" data-modal-open>Order Service</button>
+          <button class="modal-opn-btn header-modal-opn-btn" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -252,7 +257,7 @@
 
       <!-- TEAM MEMBERS -->
       <section class="employees">
-        <div class="container">
+        <div class="container employees-container">
           <h2 class="subtitle">Our Team</h2>
           <ul class="employees-list list">
             <li class="employees-list-item">
@@ -517,7 +522,7 @@
 
       <!-- CUSTOMERS -->
       <section class="customers">
-        <div class="container">
+        <div class="container customers-container">
           <h2 class="subtitle">Customers</h2>
           <ul class="customers-list list">
             <li class="customers-list-item">
